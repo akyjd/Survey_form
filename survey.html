@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div class="main">
+		<p id="description">FreeCodeCamp Survey Form Project</p>
+		<form id="survey-form">
+    		<div class="rowTab">
+      			<div class="labels">
+        			<label id="name-label" for="name">* Name: </label>
+      			</div>
+      			<div class="rightTab">
+        			<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      			</div>
+    		</div>
+    		<div class="rowTab">
+      			<div class="labels">
+        			<label id="email-label" for="email">* Email: </label>
+     			 </div>
+      		<div class="rightTab">
+       			 <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+     		 </div>
+    	</div>
+    	<div class="rowTab">
+     		 <div class="labels">
+       			 <label id="number-label" for="age">* Age: </label>
+      		</div>
+      		<div class="rightTab">
+       			 <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+     		 </div>
+   		 </div>
+   		 <div class="rowTab">
+     	 <div class="labels">
+       		 <label for="currentPos">Dropdown Example</label>
+      	</div>
+      	<div class="rightTab">
+        	<select id="dropdown" name="currentPos" class="dropdown">
+      			<option disabled value>Select an option</option>
+      			<option  value="option1">Option 1</option>
+      			<option value="option2">Option 2</option>
+      			<option value="option3">Option 3</option>
+      			<option value="option4">Option 4</option>
+      			<option value="option5">Option 5</option>
+    		</select>
+      	</div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Radio Buttons Example</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Button 1<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Button 2<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Button 3<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Checkboxes example</label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Box 1</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Box 2</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Box3</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Box 4</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Box 5</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Text Area Example (for additional comments)</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:70px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
